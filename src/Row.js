@@ -52,9 +52,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
             onClick={() => handleClick(movie)}
             className={`row_poster ${isLargeRow && 'row_posterLarge'}`}
             src={`${base_url}${
-              isLargeRow ? movies.poster_path : movies.backdrop_path
+              isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
-            alt={movies.name}
+            alt={movie.name}
           />
         ))}
       </div>
